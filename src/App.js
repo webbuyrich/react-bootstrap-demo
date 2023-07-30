@@ -3,6 +3,7 @@ import './App.css';
 import NavigationMenu from './components/Navigation';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavigationMenu />
       <Header />
       <MainContent />
+      <Footer />
     </div>
   );
 }
