@@ -1,5 +1,5 @@
 import React  from "react";
-import { default as logo } from '../assets/brand/bootstrap-logo.svg';
+import { default as logo } from '../../assets/brand/bootstrap-logo.svg';
 
 
 const Footer = () => {
