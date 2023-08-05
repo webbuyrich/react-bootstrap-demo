@@ -2,7 +2,7 @@ import React  from "react";
 import priceData from "./priceData.json"
 
 
-const PriceCardComponent = () => {
+const PriceCardComponent = ({ isFree }) => {
     
     //Access price card data from the JSON file
     const cards = priceData.cards;
@@ -23,9 +23,8 @@ const PriceCardComponent = () => {
                                 <li>{card.emailSupport} support</li>
                                 <li>{card.helpCenter}</li>
                             </ul>
-                            {/* if statment needed to determine button bg */ }
-                            
-                            <button type="button" className={'w-100 btn btn-lg btn-primary'}>{card.callToAction}</button>
+                            {/* if statment needed to determine button bg */ }                            
+                            <button type="button" className={"w-100 btn btn-lg " + (card.title === "Free" ? 'btn-outline-primary' : 'btn-primary')}>{card.callToAction}</button>
                         </div>
                     </div>
                 </div> 
