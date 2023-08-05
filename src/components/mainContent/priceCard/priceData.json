@@ -1,0 +1,31 @@
+{
+    "cards": [
+        {
+            "price": 0,
+            "title":"Free",
+            "users":"10",
+            "storage":"2",
+            "emailSupport": "Email",
+            "helpCenter":"Help center access",
+            "callToAction": "Sign Up For Free"
+        },
+        {
+            "price": 15,
+            "title":"Pro",
+            "users":"20",
+            "storage":"10",
+            "emailSupport": "Priority email",
+            "helpCenter":"Help center access",
+            "callToAction": "Get Started"
+        },
+        {
+            "price": 29,
+            "title":"Enterprise",
+            "users":"30",
+            "storage":"15",
+            "emailSupport": "Phone and email",
+            "helpCenter":"Help center access",
+            "callToAction": "Contact Us"
+        }
+    ]
+}
