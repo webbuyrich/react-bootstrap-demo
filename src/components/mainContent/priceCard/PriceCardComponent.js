@@ -2,7 +2,7 @@ import React  from "react";
 import priceData from "./priceData.json"
 
 
-const PriceCardComponent = ({ isFree }) => {
+const PriceCardComponent = () => {
     
     //Access price card data from the JSON file
     const cards = priceData.cards;
@@ -11,8 +11,8 @@ const PriceCardComponent = ({ isFree }) => {
         <>
             {cards.map((card) =>
                 <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
+                    <div className={"card mb-4 rounded-3 shadow-sm " + (card.title === "Enterprise" ? "border-primary" : "")}>
+                        <div class={"card-header py-3 " + (card.title === "Enterprise" ? "text-bg-primary border-primary" : "")}>
                             <h4 class="my-0 fw-normal">{card.title}</h4>
                         </div>
                         <div class="card-body">
